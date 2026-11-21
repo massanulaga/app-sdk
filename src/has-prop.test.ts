@@ -47,6 +47,16 @@ describe("hasProp", () => {
       expected: false,
     },
     {
+      obj: { null: 1 },
+      key: null,
+      expected: false,
+    },
+    {
+      obj: { undefined: 2 },
+      key: undefined,
+      expected: false,
+    },
+    {
       obj: { 1: "x" },
       key: 1,
       expected: true,
